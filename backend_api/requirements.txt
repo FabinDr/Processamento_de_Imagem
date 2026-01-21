@@ -1,0 +1,21 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+
+# visão
+opencv-python-headless
+pillow
+
+# yolo
+ultralytics
+
+# IMPORTANT: PaddleOCR não gosta de numpy 2.x em muitos ambientes
+numpy==1.26.4
+
+# PaddleOCR
+paddleocr==2.7.0.3
+
+# PaddlePaddle CPU wheels (precisa desse index extra em vários ambientes)
+--extra-index-url https://www.paddlepaddle.org.cn/packages/stable/cpu/
+paddlepaddle==2.6.2
