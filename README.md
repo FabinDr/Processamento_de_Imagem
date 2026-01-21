@@ -29,19 +29,20 @@
 
 ## 📌 Sumário
 
-- [📖 Sobre o Projeto](#-sobre-o-projeto)
-- [🧰 Tecnologias e Bibliotecas Utilizadas](#-tecnologias-e-bibliotecas-utilizadas)
-- [📂 Estrutura do Repositório](#-estrutura-do-repositório)
-- [🔄 Diagrama do Funcionamento](#-diagrama-do-funcionamento-do-projeto)
-- [📸 Demonstração](#-demonstração-prints)
-- [✅ Instalação e Execução](#-instalação-e-execução)
-  - [⚡ Método 1 (Recomendado) — Flutter + API Hugging Face](#-método-1-recomendado--flutter--api-hugging-face)
-  - [🧠 Método 2 (Local) — Backend FastAPI + Flutter](#-método-2-local--backend-fastapi--flutter)
-- [📱 Como Usar o App](#-como-usar-o-app)
-- [📚 Dataset](#-dataset)
+- [📖 Sobre o Projeto](#sobre-o-projeto)
+- [🧰 Tecnologias e Bibliotecas Utilizadas](#tecnologias)
+- [📂 Estrutura do Repositório](#estrutura)
+- [🔄 Diagrama do Funcionamento](#diagrama)
+- [📸 Demonstração](#demonstracao)
+- [✅ Instalação e Execução](#instalacao)
+  - [⚡ Método 1 (Recomendado) — Flutter + API Hugging Face](#metodo-1)
+  - [🧠 Método 2 (Local) — Backend FastAPI + Flutter](#metodo-2))
+- [📱 Como Usar o App](#como-usar)
+- [📚 Dataset](#dataset)
 
 ---
 
+<a id="sobre-o-projeto"></a>
 ## 📖 Sobre o Projeto
 
 <div align="justify">
@@ -58,6 +59,8 @@ O sistema é capaz de:
 </div>
 
 ---
+
+<a id="tecnologias"></a>
 
 ## 🧰 Tecnologias e Bibliotecas Utilizadas
 
@@ -80,6 +83,8 @@ O sistema é capaz de:
 
 ---
 
+<a id="estrutura"></a>
+
 ## 📂 Estrutura do Repositório
 
 ```txt
@@ -91,6 +96,8 @@ Processamento_de_Imagem/
 ````
 
 ---
+
+<a id="diagrama"></a>
 
 ## Diagrama do Funcionamento do Projeto
 
@@ -115,6 +122,8 @@ Processamento_de_Imagem/
 
 ---
 
+<a id="demonstracao"></a>
+
 ## 📸 Demonstração (prints)
 
 <div align="center">
@@ -122,6 +131,8 @@ Processamento_de_Imagem/
 </div>
 
 ---
+
+<a id="instalacao"></a>
 
 # Instalação e Execução
 
@@ -136,7 +147,7 @@ Você roda o **backend FastAPI no seu computador** e conecta o Flutter nele.
 ➡️ Ideal para **desenvolvimento**, melhorias e testes mais avançados.
 
 ---
-
+<a id="metodo-1"></a>
 # ⚡ Método 1 (Recomendado) — Flutter + API Hugging Face
 
 Este é o jeito mais rápido de rodar o projeto, pois você **não precisa instalar Python nem rodar o backend localmente**.
@@ -257,7 +268,7 @@ flutter devices
 ```
 
 ---
-
+<a id="metodo-2"></a>
 # 🧠 Método 2 (Local) — Backend FastAPI + Flutter
 ---
 
@@ -402,6 +413,8 @@ flutter run
 
 ---
 
+<a id="como-usar"></a>
+
 # 📱 Como Usar o App
 
 ✅ Após rodar o aplicativo no celular:
@@ -417,7 +430,17 @@ flutter run
 4. Veja na tela:
    - texto da placa detectada
    - retângulo vermelho (bbox) desenhado na placa
+
+### Dicas para melhorar a leitura do OCR
+
+*  Use imagens **bem iluminadas**
+*  Evite reflexos na placa
+*  Placa deve estar **visível e centralizada**
+*  Evite fotos muito borradas ou inclinadas
+
 ---
+
+<a id="dataset"></a>
 
 # 📚 Dataset
 
