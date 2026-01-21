@@ -2,7 +2,7 @@
 
   <p align="center">
     Sistema completo de <b>Reconhecimento Automático de Placas Veiculares (ANPR)</b><br/>
-    <b>Flutter</b> + <b>FastAPI</b> + <b>YOLOv8</b> + <b>PaddleOCR</b> com pipeline otimizado (EXIF + Crop + CLAHE).
+    <b>Flutter</b> + <b>FastAPI</b> + <b>YOLOv8</b> + <b>PaddleOCR</b>.
     <br />
     <br />
     <a href="https://github.com/FabinDr/Processamento_de_Imagem/releases/tag/v1.0.0"><strong>🔗 ACESSAR O APP</strong></a>
@@ -17,7 +17,7 @@
 > **Instituição:** Universidade Federal do Maranhão (UFMA)<br />
 > **Docente:** Dr. HAROLDO GOMES BARROSO FILHO<br />
 
-### 👤 Discentes (Individual)
+### 👤 Discentes
 - **Dupla:**  
   - Fabio Duarte Ribeiro 
   - r
@@ -32,8 +32,10 @@ Este projeto implementa uma solução completa de **Reconhecimento Automático d
 ## Diagrama do Pipeline
 
 <div align="center">
-  <img src="docs/pipeline.png" width="350" alt="Pipeline ANPR"/>
+  <img src="docs/pipeline.png" width="250" alt="Pipeline ANPR"/>
 </div>
+
+---
 
 ### 🔎 Explicação do Fluxo (etapa por etapa)
 
@@ -79,6 +81,12 @@ Processamento_de_Imagem/
 ├── notebooks/          # testes/treino/validações
 └── docs/               # imagens e assets do README (pipeline.png, prints, etc.)
 ````
+---
+## 📸 Demonstração (prints)
+
+<div align="center">
+  <img src="docs/print_app.png" width="280" alt="Print do App"/>
+</div>
 
 ---
 
@@ -291,51 +299,3 @@ O modelo foi treinado utilizando um dataset público do Kaggle:
 
 🔗 [https://www.kaggle.com/datasets/barkataliarbab/license-plate-detection-dataset-10125-images](https://www.kaggle.com/datasets/barkataliarbab/license-plate-detection-dataset-10125-images)
 
----
-
-# 🧯 Troubleshooting
-
-## ❌ OCR retornando vazio
-
-Possíveis causas:
-
-* placa muito pequena
-* imagem escura/reflexo
-* recorte muito apertado
-
-Soluções:
-
-* aumentar `padding` no crop
-* reforçar pré-processamento (CLAHE/threshold/denoise)
-* testar imagens mais nítidas
-
----
-
-## ❌ Flutter não conecta na API
-
-Verifique a URL usada:
-
-✅ Emulador Android:
-
-* `http://10.0.2.2:8000/predict`
-
-✅ Celular físico:
-
-* `http://SEU_IP_LOCAL:8000/predict`
-
----
-
-## ❌ YOLO não detecta nada
-
-Causas comuns:
-
-* rotação errada (EXIF)
-* imagem ruim
-* modelo não carregado corretamente
-
-Solução:
-
-* testar com imagem mais frontal e clara
-* validar carregamento do modelo `.pt`
-
-<p align="right">(<a href="#topo">voltar ao topo</a>)</p>
