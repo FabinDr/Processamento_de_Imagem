@@ -23,7 +23,7 @@
 ### 👤 Discentes
 - **Dupla:**  
   - Fabio Duarte Ribeiro  
-  - Eliaquim  
+  - Eliaquim Santos 
 
 ---
 
