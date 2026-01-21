@@ -239,9 +239,9 @@ async def predict(file: UploadFile = File(...)):
             "confidence": 0.0,
             "plate_model_conf": 0.0,
             "bbox": None,
-            "bbox_norm": None,   # ✅ NOVO
-            "image_w": w,        # ✅ opcional
-            "image_h": h,        # ✅ opcional
+            "bbox_norm": None,
+            "image_w": w,       
+            "image_h": h,        
             "view_used": "paddleocr",
         }
 
@@ -265,8 +265,8 @@ async def predict(file: UploadFile = File(...)):
         "confidence": float(ocr_conf),
         "plate_model_conf": float(det_conf),
         "bbox": bbox,
-        "bbox_norm": bbox_norm,  # ✅ NOVO
-        "image_w": w,            # ✅ opcional
-        "image_h": h,            # ✅ opcional
+        "bbox_norm": bbox_norm,
+        "image_w": w,            
+        "image_h": h,           
         "view_used": "paddleocr",
     }
