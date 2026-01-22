@@ -4,7 +4,7 @@
   <h1>Aplicativo de Reconhecimento de Placas</h2>
 
   <p>
-    Sistema completo de <b>Reconhecimento Automático de Placas Veiculares (ANPR)</b><br/>
+    Sistema completo de <b>Reconhecimento Automático de Placas Veiculares</b><br/>
     <b>Flutter</b> + <b>FastAPI</b> + <b>YOLOv8</b> + <b>PaddleOCR</b>.
     <br /><br />
     <a href="https://github.com/FabinDr/Processamento_de_Imagem/releases/tag/v1.0.0"><strong>🔗 ACESSAR O APP</strong></a>
@@ -89,7 +89,7 @@ O sistema é capaz de:
 
 ```txt
 Processamento_de_Imagem/
-├── backend_api/        # API FastAPI + pipeline ANPR (YOLO + OCR)
+├── backend_api/        # API FastAPI + pipeline (YOLO + OCR)
 ├── flutter_app/        # App Flutter (envia imagem e exibe bbox)
 ├── notebooks/          # testes/treino/validações
 └── docs/               # imagens e assets do README (pipeline.png, prints, etc.)
@@ -127,7 +127,7 @@ Processamento_de_Imagem/
 ## 📸 Demonstração (prints)
 
 <div align="center">
-  <img src="docs/print_app.png" width="280" alt="Print do App"/>
+  <img src="docs/print_app.png" width="100%" alt="Print do App"/>
 </div>
 
 ---
