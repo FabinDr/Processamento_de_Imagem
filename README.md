@@ -432,13 +432,6 @@ flutter run
    - texto da placa detectada
    - retângulo vermelho (bbox) desenhado na placa
 
-### Dicas para melhorar a leitura do OCR
-
-*  Use imagens **bem iluminadas**
-*  Evite reflexos na placa
-*  Placa deve estar **visível e centralizada**
-*  Evite fotos muito borradas ou inclinadas
-
 ---
 
 <a id="dataset"></a>
