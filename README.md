@@ -102,7 +102,7 @@ Processamento_de_Imagem/
 ## Diagrama do Funcionamento do Projeto
 
 <div align="center">
-  <img src="docs/pipeline.png" width="220" alt="Pipeline ANPR"/>
+  <img src="docs/pipeline.png" width="220" alt="Pipeline"/>
 </div>
 
 ---
