@@ -1,12 +1,13 @@
 <a id="topo"></a>
 
 <div>
-  <h1>Aplicativo de Reconhecimento de Placas</h2>
+  <h1>Aplicativo de Reconhecimento de Placas</h1>
 
   <p>
     Sistema completo de <b>Reconhecimento Automático de Placas Veiculares</b><br/>
     <b>Flutter</b> + <b>FastAPI</b> + <b>YOLOv8</b> + <b>PaddleOCR</b>.
-    <br /><br />
+  <br />
+    <h3>- Instalação do Aplicativo</h3>
     <a href="https://github.com/FabinDr/Processamento_de_Imagem/releases/tag/v1.0.0"><strong>🔗 ACESSAR O APP</strong></a>
   </p>
 
