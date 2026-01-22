@@ -35,9 +35,9 @@
 - [📂 Estrutura do Repositório](#estrutura)
 - [🔄 Diagrama do Funcionamento](#diagrama)
 - [📸 Demonstração](#demonstracao)
-- [✅ Instalação e Execução](#instalacao)
-  - [⚡ Método 1 (Recomendado) — Flutter + API Hugging Face](#metodo-1)
-  - [🧠 Método 2 (Local) — Backend FastAPI + Flutter](#metodo-2))
+- [✅ Instalação e Execução (Recomendado)](#instalacao)
+  - [⚡ Método Único — Flutter + API Hugging Face](#metodo-1)
+  - [📦 Baixar APK (sem rodar no PC)](#apk)
 - [📱 Como Usar o App](#como-usar)
 - [📚 Dataset](#dataset)
 
@@ -132,73 +132,77 @@ Processamento_de_Imagem/
 </div>
 
 ---
-
 <a id="instalacao"></a>
 
-# Instalação e Execução
+# ✅ Instalação e Execução
 
-Existem **2 formas** de testar este projeto:
+Este é o jeito mais rápido e prático de testar o projeto  
+Você vai rodar **somente o App Flutter no celular**, consumindo a **API pronta no Hugging Face** (já configurada por nós).
 
-- **Método 1 (Recomendado / Mais rápido):**
-Você roda **apenas o Flutter no celular**, e o app consome a **API pronta no Hugging Face** (criada por nós).
-➡️ Ideal para **testar rápido** sem instalar Python e sem rodar backend no PC.
-
-- **Método 2 (Local / Completo):**
-Você roda o **backend FastAPI no seu computador** e conecta o Flutter nele.
-➡️ Ideal para **desenvolvimento**, melhorias e testes mais avançados.
 
 ---
+
 <a id="metodo-1"></a>
-# ⚡ Método 1 (Recomendado) — Flutter + API Hugging Face
 
-Este é o jeito mais rápido de rodar o projeto, pois você **não precisa instalar Python nem rodar o backend localmente**.
-
----
+# ⚡ Método Único — Flutter + API Hugging Face
 
 ## 🌐 API utilizada (Hugging Face)
 
-* **Endpoint oficial da API:**
-  🔗 [https://fabdrb-flutter-app.hf.space/predict](https://fabdrb-flutter-app.hf.space/predict)
+✅ Endpoint oficial (POST):
 
-* **Repositório do Space:**
-  🔗 [https://huggingface.co/spaces/fabdRb/anpr_app/tree/main](https://huggingface.co/spaces/fabdRb/anpr_app/tree/main)
+🔗 **https://fabdrb-flutter-app.hf.space/predict**
+
+✅ Repositório do Space:
+
+🔗 https://huggingface.co/spaces/fabdRb/anpr_app/tree/main
+
+> ℹ️ Observação: como a API está hospedada em Space, a **primeira requisição pode demorar alguns segundos** (cold start).
 
 ---
 
-## O que você vai precisar
+## ✅ O que você vai precisar
 
-Antes de começar, tenha:
+### Obrigatório
+- ✅ **Git**
+- ✅ **Flutter SDK**
+- ✅ **Celular Android**
+- ✅ **Cabo USB com transferência de dados** (não apenas carregamento)
 
-*  Um **PC** com Flutter instalado
-* Um **celular Android**
-* Um **cabo USB** (que suporte dados, não apenas carregamento)
-  
+### Opcional (recomendado para programar melhor)
+- ⭐ **VS Code** (Editor)
+- ⭐ Extensões:
+  - **Flutter**
+  - **Dart**
+
 ---
 
-## Pré-requisitos (instalações necessárias)
+## 🔧 Pré-requisitos (instalar uma única vez)
 
-* **Git**
-  [https://git-scm.com/downloads](https://git-scm.com/downloads)
+### 1) Instalar o Git
+🔗 https://git-scm.com/downloads
 
-* **Flutter SDK**
-  [https://docs.flutter.dev/get-started/install](https://docs.flutter.dev/get-started/install)
+---
 
-📌 Após instalar o Flutter, confirme no terminal:
+### 2) Instalar o Flutter SDK
+🔗 https://docs.flutter.dev/get-started/install
+
+Depois de instalar, confirme no terminal:
 
 ```bash
 flutter --version
-```
+````
 
-E rode o verificador:
+E rode:
 
 ```bash
 flutter doctor
 ```
- O ideal é aparecer tudo como `✓` (ou pelo menos o Android Toolchain OK).
+
+✅ O ideal é aparecer **Android toolchain OK** (mesmo que falte algo do iOS, isso é normal no Windows).
 
 ---
 
-## Passo a passo (modo rápido)
+## Passo a passo (rodar no celular)
 
 ### 1) Clonar o repositório
 
@@ -207,50 +211,74 @@ git clone https://github.com/FabinDr/Processamento_de_Imagem.git
 cd Processamento_de_Imagem
 ```
 
+---
+
 ### 2) Entrar na pasta do Flutter
 
 ```bash
 cd flutter_app
 ```
 
-### 3) Instalar dependências do projeto Flutter
+---
+
+### 3) Baixar dependências do Flutter
 
 ```bash
 flutter pub get
 ```
 
-### 4) Confirmar a URL da API no Flutter 
+---
 
-No arquivo:
+### 4) Confirmar URL da API no App
+
+Arquivo:
 
 📌 `flutter_app/anpr_flutter/lib/main.dart`
 
-Procure:
+Verifique se está assim:
 
 ```dart
 const String apiUrl = "https://fabdrb-flutter-app.hf.space/predict";
 ```
 
- Se estiver igual acima, não precisa alterar nada.
+✅ Se estiver igual acima, **não precisa alterar nada**.
 
 ---
 
-## Conectar o celular via USB (para rodar o app)
+## 📱 Conectar o celular antes de rodar (IMPORTANTE)
 
-### No celular (ativar modo desenvolvedor)
+### ✅ No celular (ativar modo desenvolvedor)
 
 1. Vá em **Configurações → Sobre o telefone**
 2. Toque **7 vezes** em **Número da versão**
 3. Volte e abra **Opções do desenvolvedor**
 4. Ative **Depuração USB**
 5. Conecte o celular no PC via USB
-6. Aceite o pop-up **Permitir depuração USB**
+6. Aceite o pop-up **“Permitir depuração USB”**
 
 ---
 
-## Rodar o app no celular
+## ✅ Verificar se o celular foi reconhecido no PC
 
-Com o celular conectado via USB, execute:
+Antes de rodar o app, execute:
+
+```bash
+flutter devices
+```
+
+✅ Se aparecer algo como:
+
+```
+SM-A... • android • Android 13
+```
+
+Então está pronto!!
+
+---
+
+## ▶️ Rodar o App no celular
+
+Com o celular conectado:
 
 ```bash
 flutter run
@@ -258,159 +286,25 @@ flutter run
 
  O Flutter irá:
 
-* identificar o celular
+* detectar o celular
 * instalar o app automaticamente
 * abrir o aplicativo
 
-📌 Se quiser ver os dispositivos conectados:
-
-```bash
-flutter devices
-```
-
----
-<a id="metodo-2"></a>
-# 🧠 Método 2 (Local) — Backend FastAPI + Flutter
 ---
 
-## Pré-requisitos (Modo Local)
+<a id="apk"></a>
 
-* **Git**
-  [https://git-scm.com/downloads](https://git-scm.com/downloads)
+# 📦 Baixar APK (sem rodar no PC)
 
-* **Python 3.9+**
-  [https://www.python.org/downloads/](https://www.python.org/downloads/)
+Se você só quiser baixar e instalar o aplicativo direto:
 
-* **Flutter SDK**
-  [https://docs.flutter.dev/get-started/install](https://docs.flutter.dev/get-started/install)
+🔗 **Link oficial do APK (Releases):**
+[https://github.com/FabinDr/Processamento_de_Imagem/releases/tag/v1.0.0](https://github.com/FabinDr/Processamento_de_Imagem/releases/tag/v1.0.0)
 
-> Opcional:
+✅ Baixe o `.apk` e instale no Android.
 
-* **Docker**
-  [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
-
----
-
-## Passo a passo (Modo Local)
-
-### 1) Clonar o projeto
-
-```bash
-git clone https://github.com/FabinDr/Processamento_de_Imagem.git
-cd Processamento_de_Imagem
-```
-
----
-
-## 2) Rodar BACKEND (FastAPI)
-
-### 2.1) Entrar na pasta do backend
-
-```bash
-cd backend_api
-```
-
-### 2.2) Criar ambiente virtual
-
-```bash
-python -m venv .venv
-```
-
-### 2.3) Ativar ambiente virtual
-
-**Windows (PowerShell):**
-
-```bash
-.venv\Scripts\Activate.ps1
-```
-
-**Windows (CMD):**
-
-```bash
-.venv\Scripts\activate.bat
-```
-
-**Linux/Mac:**
-
-```bash
-source .venv/bin/activate
-```
-
-### 2.4) Instalar dependências
-
-Se existir `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
-✅ Se não existir:
-
-```bash
-pip install fastapi uvicorn opencv-python ultralytics paddleocr numpy pillow
-```
-
-### 2.5) Subir a API
-
-```bash
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-✅ API online:
-
-* [http://localhost:8000](http://localhost:8000)
-
-✅ Swagger:
-
-* [http://localhost:8000/docs](http://localhost:8000/docs)
-
----
-
-## 4) Rodar Flutter conectado ao backend local
-
-### 4.1) Entrar na pasta Flutter
-
-```bash
-cd ../flutter_app
-```
-
-### 4.2) Instalar dependências
-
-```bash
-flutter pub get
-```
-
-### 4.3) Ajustar URL da API no Flutter ⚠️
-
-Procure:
-
-```dart
-const String apiUrl = "https://fabdrb-flutter-app.hf.space/predict";
-```
-
-✅ **Emulador Android**
-
-```txt
-http://10.0.2.2:8000/predict
-```
-
-✅ **Celular físico**
-
-```txt
-http://SEU_IP_LOCAL:8000/predict
-```
-
-Exemplo:
-
-```txt
-http://192.168.0.10:8000/predict
-```
-
-### 4.4) Rodar
-
-```bash
-flutter run
-```
+> ⚠️ Talvez o Android peça permissão de “Instalar apps desconhecidos”.
+> É normal, basta permitir.
 
 ---
 
@@ -442,3 +336,5 @@ Dataset utilizado para treino:
 🔗 [https://www.kaggle.com/datasets/barkataliarbab/license-plate-detection-dataset-10125-images](https://www.kaggle.com/datasets/barkataliarbab/license-plate-detection-dataset-10125-images)
 
 ---
+
+- [🔝 Voltar ao topo](#topo)
