@@ -148,11 +148,11 @@ Você vai rodar **somente o App Flutter no celular**, consumindo a **API pronta 
 
 ## 🌐 API utilizada (Hugging Face)
 
-✅ Endpoint oficial (POST):
+Endpoint oficial (POST):
 
 🔗 **https://fabdrb-flutter-app.hf.space/predict**
 
-✅ Repositório do Space:
+Repositório do Space:
 
 🔗 https://huggingface.co/spaces/fabdRb/anpr_app/tree/main
 
@@ -160,17 +160,17 @@ Você vai rodar **somente o App Flutter no celular**, consumindo a **API pronta 
 
 ---
 
-## ✅ O que você vai precisar
+## O que você vai precisar
 
 ### Obrigatório
-- ✅ **Git**
-- ✅ **Flutter SDK**
-- ✅ **Celular Android**
-- ✅ **Cabo USB com transferência de dados** (não apenas carregamento)
+- **Git**
+- **Flutter SDK**
+- **Celular Android**
+- **Cabo USB com transferência de dados** (não apenas carregamento)
 
 ### Opcional (recomendado para programar melhor)
-- ⭐ **VS Code** (Editor)
-- ⭐ Extensões:
+- **VS Code** (Editor)
+- Extensões:
   - **Flutter**
   - **Dart**
 
@@ -198,7 +198,7 @@ E rode:
 flutter doctor
 ```
 
-✅ O ideal é aparecer **Android toolchain OK** (mesmo que falte algo do iOS, isso é normal no Windows).
+O ideal é aparecer **Android toolchain OK** (mesmo que falte algo do iOS, isso é normal no Windows).
 
 ---
 
@@ -241,13 +241,13 @@ Verifique se está assim:
 const String apiUrl = "https://fabdrb-flutter-app.hf.space/predict";
 ```
 
-✅ Se estiver igual acima, **não precisa alterar nada**.
+Se estiver igual acima, **não precisa alterar nada**.
 
 ---
 
 ## 📱 Conectar o celular antes de rodar (IMPORTANTE)
 
-### ✅ No celular (ativar modo desenvolvedor)
+### No celular (ativar modo desenvolvedor)
 
 1. Vá em **Configurações → Sobre o telefone**
 2. Toque **7 vezes** em **Número da versão**
@@ -258,7 +258,7 @@ const String apiUrl = "https://fabdrb-flutter-app.hf.space/predict";
 
 ---
 
-## ✅ Verificar se o celular foi reconhecido no PC
+## Verificar se o celular foi reconhecido no PC
 
 Antes de rodar o app, execute:
 
@@ -266,7 +266,7 @@ Antes de rodar o app, execute:
 flutter devices
 ```
 
-✅ Se aparecer algo como:
+Se aparecer algo como:
 
 ```
 SM-A... • android • Android 13
@@ -301,7 +301,7 @@ Se você só quiser baixar e instalar o aplicativo direto:
 🔗 **Link oficial do APK (Releases):**
 [https://github.com/FabinDr/Processamento_de_Imagem/releases/tag/v1.0.0](https://github.com/FabinDr/Processamento_de_Imagem/releases/tag/v1.0.0)
 
-✅ Baixe o `.apk` e instale no Android.
+Baixe o `.apk` e instale no Android.
 
 > ⚠️ Talvez o Android peça permissão de “Instalar apps desconhecidos”.
 > É normal, basta permitir.
@@ -312,7 +312,7 @@ Se você só quiser baixar e instalar o aplicativo direto:
 
 # 📱 Como Usar o App
 
-✅ Após rodar o aplicativo no celular:
+Após rodar o aplicativo no celular:
 
 ### Passo a passo do usuário
 
